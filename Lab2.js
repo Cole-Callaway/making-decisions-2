@@ -112,10 +112,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-for (let i = 0; 1 < listOfNumbers.length; i++) {
+for (let i = 0; i < listOfNumbers.length; i++) {
   if (listOfNumbers[i] % 3 === 0) {
     console.log(`${listOfNumbers[i]} is divisible by 3`)
   }
+  
 }
 
 ////////// PROBLEM 9 //////////
@@ -128,7 +129,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-for (let i = letters.length; i >= 0; i--) {
+for (let i = letters.length-1; i >= 0; i--) {
   console.log(letters[i])
 }
 
@@ -151,7 +152,31 @@ If D: "The student is not doing very well."
 If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
+// if (letterGrade = 'B') {
+//   console.log('The student is doing well.')
+// } else if (letterGrade = 'A') {
+//   console.log('The student is doing excellently.')
+// } else if (letterGrade = 'C') {
+//   console.log('The student is doing alright.')
+// } else if (letterGrade = 'D') {
+//   console.log('The student is not doing very well..')
+// } else if (letterGrade) {
+//   console.log('Not an eligible grade.')
+// }
 
+
+
+
+
+switch (letterGrade) {
+  case 'A': console.log('The student is doing excellently.')
+  case 'B': console.log('The student is doing well.')
+  case 'C': console.log('The student is doing alright.')
+  case 'D': console.log('The student is not doing very well.')
+  case 'F': console.log('The student is failing.')
+  default:
+    console.log('Not an eligible grade')
+}
 //Code Here
 
 
